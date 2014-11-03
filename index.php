@@ -9,5 +9,6 @@ $f3->set('DB', new DB\SQL(
 )); 
 $f3->config('config.ini');
 $f3->route('GET /',array(new HomeController($f3),'main'));
+$f3->route('POST /',array(new HomeController($f3),'add'));
 
 $f3->run();

@@ -1,4 +1,10 @@
 <div id="content">
 	<h1>Feel Tracker</h1>
+	<?php echo 'ok'; ?>
+	{~ foreach (@feelings as @id=>@feeling): ~}
+		<div style="background:{{@feeling.color}};">
+			<p>{{@feeling.name}}</p>
+		</div>
+	{~ endforeach ~}
 	
 </div>
